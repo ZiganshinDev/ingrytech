@@ -82,7 +82,7 @@ func (h *Handler) updateBook(c echo.Context) error {
 		return handleError(err)
 	}
 
-	book, err := convertBookToModel(BookRequest{})
+	book, err := convertBookToModel(req)
 	if err != nil {
 		return handleError(err)
 	}
