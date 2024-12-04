@@ -1,6 +1,6 @@
 # Тестовое задание для Ingry.tech
 
-## Затраченное время на выполнение: 3ч 40м
+## Затрачено время на выполнение: 3ч 55м
 
 ## Для запуска
 1) git clone https://github.com/ZiganshinDev/local-deploy.git
