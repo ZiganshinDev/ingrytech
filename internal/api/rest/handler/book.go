@@ -24,6 +24,13 @@ type BookResponse struct {
 }
 
 // POST one
+// Пример тела запроса
+//
+//	{
+//	    "name": "Martin Eden",
+//	    "author": "Jack London",
+//	    "publication_date":"1909-01-09T15:04:05Z"
+//	}
 func (h *Handler) createBook(c echo.Context) error {
 	var req BookRequest
 	if err := c.Bind(&req); err != nil {
