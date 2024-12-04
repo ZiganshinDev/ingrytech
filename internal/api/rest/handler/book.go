@@ -119,7 +119,7 @@ func (h *Handler) deleteBook(c echo.Context) error {
 }
 
 func convertBookToModel(req BookRequest) (models.Book, error) {
-	pubDate, err := time.Parse(time.UTC.String(), req.PublicationDate)
+	pubDate, err := time.Parse(time.RFC3339, req.PublicationDate)
 	if err != nil {
 		return models.Book{}, svcerr.NewErr(svcerr.ErrBadRequest, "invalid publication date")
 	}
